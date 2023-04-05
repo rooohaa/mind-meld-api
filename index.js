@@ -21,7 +21,7 @@ app.get("/", (_, res) => {
   })
 })
 
-app.post("/prompt", async (req, res) => {
+app.post("/api/prompt", async (req, res) => {
   const { prompt = "" } = req.body
 
   if (!prompt) {
